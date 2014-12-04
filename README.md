@@ -4,9 +4,8 @@ CustomMessages
 Set a custom join or leave message for players!
 
 
-##### How to use
-=
-
+How to use
+==============
 1. Download and install this plugin on your ``plugins/`` folder.
 2. Run your server and come back to the ``plugins`` folder. You will notice that a new folder was created inside it, named ``CustomMessages``.
 3. Open the new folder.
