@@ -17,6 +17,8 @@ class Main extends PluginBase implements Listener{
         if(!$cfg->exists("quitmessage")){
             $cfg->set("quitmessage", "@player leave the server :(");
         }
+        $cfg->save();
+        $cfg->reload();
 
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->getLogger()->info(TextFormat::AQUA . "Everything loaded!");
