@@ -9,6 +9,7 @@ use pocketmine\utils\TextFormat;
 
 class Main extends PluginBase implements Listener{
     public function onEnable(){
+        @mkdir($this->getDataFolder());
         $this->saveDefaultConfig();
         $cfg = $this->getConfig();
         if(!$cfg->exists("joinmessage")){
